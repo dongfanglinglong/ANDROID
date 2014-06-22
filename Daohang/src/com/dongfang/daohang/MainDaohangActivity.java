@@ -34,7 +34,7 @@ public class MainDaohangActivity extends BaseActivity {
 	private TextView title;
 
 	private Context context;
-	public static int tab = 2;
+	public static int tab = 0;
 	
 	private Bundle data; 
 
@@ -67,19 +67,19 @@ public class MainDaohangActivity extends BaseActivity {
 
 		TextView tab1 = (TextView) getLayoutInflater().inflate(R.layout.activity_main_tab, null);
 		TextView tab2 = (TextView) getLayoutInflater().inflate(R.layout.activity_main_tab, null);
-		TextView tab3 = (TextView) getLayoutInflater().inflate(R.layout.activity_main_tab, null);
+//		TextView tab3 = (TextView) getLayoutInflater().inflate(R.layout.activity_main_tab, null);
 		TextView tab4 = (TextView) getLayoutInflater().inflate(R.layout.activity_main_tab, null);
 		TextView tab5 = (TextView) getLayoutInflater().inflate(R.layout.activity_main_tab_2, null);
 
 		tab1.setText("楼层");
 		tab2.setText("商户");
-		tab3.setText("活动");
+//		tab3.setText("活动");
 		tab4.setText("我的");
 		tab5.setText("详情");
 
-		tab1.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_0, 0, 0);
+		tab1.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_5, 0, 0);
 		tab2.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_1, 0, 0);
-		tab3.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_2, 0, 0);
+//		tab3.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_2, 0, 0);
 		tab4.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_3, 0, 0);
 		tab5.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_4, 0, 0);
 
@@ -87,7 +87,7 @@ public class MainDaohangActivity extends BaseActivity {
 		fgtHost.addTab(fgtHost.newTabSpec("0").setIndicator(tab1), FloorFragment.class, data);
 		// fgtHost.addTab(fgtHost.newTabSpec("1").setIndicator(tab2), ShopListFragment.class, null);
 		fgtHost.addTab(fgtHost.newTabSpec("1").setIndicator(tab2), Shops2Fragment.class, null);
-		fgtHost.addTab(fgtHost.newTabSpec("2").setIndicator(tab3), ActivityFragment.class, null);
+//		fgtHost.addTab(fgtHost.newTabSpec("2").setIndicator(tab3), ActivityFragment.class, null);
 		fgtHost.addTab(fgtHost.newTabSpec("3").setIndicator(tab4), UserFragment.class, null);
 		fgtHost.addTab(fgtHost.newTabSpec("4").setIndicator(tab5), DetailFragment.class, null);
 
