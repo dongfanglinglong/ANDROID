@@ -6,13 +6,69 @@
     <include
         android:id="@+id/fragment_home_top_bar_layout"
         android:layout_alignParentTop="true"
-        layout="@layout/activity_main_top_bar" />
+        layout="@layout/top_bar" />
 
-    <com.dongfang.daohang.views.MyWebView
-        android:id="@+id/my_webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/fragment_home_top_bar_layout" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_home_top_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="275dp"
+        android:maxWidth="768dp"
+        android:src="@drawable/idx_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/idx_3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignTop="@+id/imageView2"
+        android:src="@drawable/idx_2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/idx_4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView4"
+        android:src="@drawable/idx_5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/idx_6" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView6"
+        android:src="@drawable/idx_7" />
 
 </RelativeLayout>

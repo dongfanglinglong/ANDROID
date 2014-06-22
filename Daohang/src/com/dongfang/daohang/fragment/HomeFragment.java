@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.dongfang.daohang.MainDaohangActivity;
 import com.dongfang.daohang.R;
@@ -21,28 +22,27 @@ import com.lidroid.xutils.view.annotation.event.OnClick;
 
 public class HomeFragment extends BaseFragment {
 
-	@ViewInject(R.id.my_webview)
-	private MyWebView webView;
-	private ProxyBridge proxyBridge;
-
-	// Contact contact;
+	@ViewInject(R.id.top_bar_tv_title)
+	private TextView title;
+	@ViewInject(R.id.top_bar_btn_back)
+	private View vBack;
+	@ViewInject(R.id.top_bar_btn_qr)
+	private View vQR;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_home, container, false);
 		ViewUtils.inject(this, view);
-		// webView.loadUrl("http://211.149.200.227:30001/web/index.php?m=1&s=335&e=337");
-		// webView.loadUrl("file:///android_asset/index.html");
-		webView.loadUrl(ComParams.BASE_URL);
-		proxyBridge = new ProxyBridge(getActivity(), webView);
-		webView.addJavascriptInterface(proxyBridge);
+		title.setText("上海日月光广场");
+		vBack.setVisibility(View.INVISIBLE);
+		vQR.setVisibility(View.VISIBLE);
+		
 		return view;
 	}
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (resultCode == Activity.RESULT_OK && requestCode == 0x00f0 && null != data && data.hasExtra("result")) {
-			proxyBridge.setPosition(data.getStringExtra("result"), 3);
 		}
 		StringBuilder sb = new StringBuilder();
 		sb.append("requestCode = ").append(requestCode);
@@ -52,13 +52,12 @@ public class HomeFragment extends BaseFragment {
 		ULog.e(sb.toString());
 	}
 
-	@OnClick({ R.id.fragment_home_iv_qr, R.id.activity_maini_top_bar_btn_left, })
+	@OnClick({R.id.top_bar_btn_qr, R.id.activity_maini_top_bar_btn_left, })
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.fragment_home_iv_qr:
-			// contact.showcontacts("[{\"name\":\"zxx\", \"amount\":\"8888\", \"phone\":\"18600012345\"},{\"name\":\"zxx\", \"amount\":\"9999999\", \"phone\":\"18600012345\"}]");
-			startActivityForResult(new Intent(getActivity(), MCaptureActivity.class), 0x00f0);
+		case R.id.top_bar_btn_qr:
+			startActivityForResult(new Intent(getActivity(), MCaptureActivity.class), 0x00F0);
 			break;
 		case R.id.activity_maini_top_bar_btn_left:
 			startActivity(new Intent(getActivity(), MainDaohangActivity.class));

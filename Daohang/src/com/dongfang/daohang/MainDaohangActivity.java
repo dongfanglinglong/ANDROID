@@ -8,9 +8,8 @@ import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import com.dongfang.daohang.fragment.ActivityFragment;
 import com.dongfang.daohang.fragment.DetailFragment;
-import com.dongfang.daohang.fragment.FloorFragment;
+import com.dongfang.daohang.fragment.HomeFragment;
 import com.dongfang.daohang.fragment.Shops2Fragment;
 import com.dongfang.daohang.fragment.UserFragment;
 import com.dongfang.utils.ULog;
@@ -84,7 +83,7 @@ public class MainDaohangActivity extends BaseActivity {
 		tab5.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.mian_activity_tab_4, 0, 0);
 
 		fgtHost.getTabWidget().setDividerDrawable(null);
-		fgtHost.addTab(fgtHost.newTabSpec("0").setIndicator(tab1), FloorFragment.class, data);
+		fgtHost.addTab(fgtHost.newTabSpec("0").setIndicator(tab1), HomeFragment.class, data);
 		// fgtHost.addTab(fgtHost.newTabSpec("1").setIndicator(tab2), ShopListFragment.class, null);
 		fgtHost.addTab(fgtHost.newTabSpec("1").setIndicator(tab2), Shops2Fragment.class, null);
 //		fgtHost.addTab(fgtHost.newTabSpec("2").setIndicator(tab3), ActivityFragment.class, null);
