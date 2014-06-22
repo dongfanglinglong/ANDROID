@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F3"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar" />
+
+    <include layout="@layout/dialog_goto" />
+
+    <include layout="@layout/activity_takeme_text_navigation" 
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="路劲选择"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#c4c4c4" />
+
+    <Button
+        android:id="@+id/activity_takeme_btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg_1"
+        android:text="最短线路"
+        android:textColor="@color/tv_select_text_color" />
+
+    <Button
+        android:id="@+id/activity_takeme_btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg_1"
+        android:text="路过洗手间"
+        android:textColor="@color/tv_select_text_color" />
+
+    <Button
+        android:id="@+id/activity_takeme_btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg_1"
+        android:text="不坐电梯"
+        android:textColor="@color/tv_select_text_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|bottom"
+        android:padding="10dp"
+        android:text="确认位置后开始选择路线"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

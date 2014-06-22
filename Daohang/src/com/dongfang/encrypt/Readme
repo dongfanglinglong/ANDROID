@@ -1,0 +1,5 @@
+加密相关文件
+
+1. 和平台交互加密使用类：RSAEncryptHelper2，方法为  encrypt(...)
+
+2. 本地加密解密使用：AESEncrypt ，方法为 encrypt(...) 和  decrypt(...)

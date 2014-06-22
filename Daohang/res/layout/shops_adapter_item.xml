@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/shops_adapter_item_tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="100米"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/shops_adapter_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="1.棒子烤肉"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/shops_adapter_item_tv_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/shops_adapter_item_tv_name"
+            android:background="#01FDB6"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:text="订"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <RatingBar
+            android:id="@+id/shops_adapter_item_ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shops_adapter_item_tv_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:progress="80" />
+
+        <TextView
+            android:id="@+id/shops_adapter_item_tv_renjun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/shops_adapter_item_ratingbar"
+            android:layout_toRightOf="@+id/shops_adapter_item_ratingbar"
+            android:singleLine="true"
+            android:text="人均:￥" />
+
+        <TextView
+            android:id="@+id/shops_adapter_item_tv_percapita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/shops_adapter_item_ratingbar"
+            android:layout_toRightOf="@+id/shops_adapter_item_tv_renjun"
+            android:singleLine="true"
+            android:text="150"
+            android:textColor="#D70707" />
+
+        <TextView
+            android:id="@+id/shops_adapter_item_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shops_adapter_item_ratingbar"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="碧云红枫。。。。。。。。。。。。。。。。。。" />
+
+        <TextView
+            android:id="@+id/shops_adapter_item_tv_characteristic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shops_adapter_item_tv_address"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shop_list_adaper_bg_1"
+            android:singleLine="true"
+            android:text="烤肉烤肉烤肉"
+            android:textColor="#F8A407" />
+
+        <View
+            android:id="@+id/shops_adapter_item_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/shops_adapter_item_tv_characteristic"
+            android:layout_marginTop="5dp"
+            android:background="#999999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/shops_adapter_item_view_line" >
+
+            <Button
+                android:id="@+id/shops_adapter_item_btn_goto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg_1"
+                android:gravity="center"
+                android:text="地图"
+                android:textColor="@color/tv_select_text_color" />
+
+            <Button
+                android:id="@+id/shops_adapter_item_btn_tel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tab_bg_2"
+                android:gravity="center"
+                android:text="电话"
+                android:textColor="@color/tv_select_text_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

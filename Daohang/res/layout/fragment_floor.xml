@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/dialog_goto" /> -->
+
+    <include
+        android:id="@+id/fragment_floor_top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar" />
+
+    <com.dongfang.daohang.views.MyWebView
+        android:id="@+id/fragment_floor_myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_floor_top_bar" />
+
+    <ImageView
+        android:id="@+id/fragment_floor_iv_dwq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/dwq" />
+
+    <ImageView
+        android:id="@+id/fragment_floor_iv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dwq"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fragment_floor_text_navigation_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/progressdlg_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/fragment_floor_text_navigation_btn_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/fragment_floor_text_navigation_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/fragment_floor_text_navigation_btn_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

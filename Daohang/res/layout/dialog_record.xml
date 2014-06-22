@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/dialog_record_share_mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_white_top"
+        android:gravity="center"
+        android:text="微信分享我的位置"
+        android:textColor="@color/tv_tab_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/dialog_record_share_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_white_center"
+        android:gravity="center"
+        android:text="短信分享我的位置"
+        android:textColor="@color/tv_tab_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <LinearLayout
+        android:id="@+id/dialog_record_recorded_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_white_center"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/dialog_record_recorded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="★ 添加记录点"
+            android:textColor="@color/tv_tab_text_color" />
+
+        <ProgressBar
+            android:id="@+id/dialog_record_progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/dialog_record_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_white_bottom"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/tv_tab_text_color" />
+
+</LinearLayout>

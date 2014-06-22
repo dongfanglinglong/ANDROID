@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/fragment_userlr_login_topbar"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar" />
+
+    <TextView
+        android:id="@+id/activity_userlr_tv_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fragment_userlr_login_topbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="会员登录"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/fragment_userlr_login_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_userlr_tv_back"
+        android:layout_alignRight="@+id/activity_userlr_tv_back"
+        android:layout_below="@+id/activity_userlr_tv_back"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/top_bar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/fragment_userlr_login_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="用户名"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_userlr_login_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment_userlr_login_ll_1"
+        android:layout_alignRight="@+id/fragment_userlr_login_ll_1"
+        android:layout_below="@+id/fragment_userlr_login_ll_1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/fragment_userlr_login_et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_userlr_login_tv_frogentpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment_userlr_login_ll_2"
+        android:layout_below="@+id/fragment_userlr_login_ll_2"
+        android:layout_marginTop="10dp"
+        android:text="忘记密码?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/fragment_userlr_login_ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fragment_userlr_login_tv_frogentpsw"
+        android:layout_alignRight="@+id/top_bar_btn_back"
+        android:layout_below="@+id/fragment_userlr_login_tv_frogentpsw"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/fragment_userlr_login_bt_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_register"
+            android:text="注册"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/fragment_userlr_login_bt_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login"
+            android:text="登录"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top_bar_btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fragment_userlr_login_ll_3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="第三方登录"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+ 
+
+    
+     <TableLayout
+          android:layout_marginTop="10dp"
+         android:layout_below="@+id/top_bar_btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/activity_lr_login_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_sina" />
+
+            <ImageView
+                android:id="@+id/activity_lr_login_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_qq" />
+
+            <ImageView
+                android:id="@+id/activity_lr_login_rr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_renren" />
+
+            <ImageView
+                android:id="@+id/activity_lr_login_baidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_baidu" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/activity_lr_login_zhifubao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_zhifubao" />
+
+            <ImageView
+                android:id="@+id/activity_lr_login_mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_mm" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/icon_sina"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_qq"
+                android:visibility="invisible" />
+        </TableRow>
+    </TableLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</RelativeLayout>

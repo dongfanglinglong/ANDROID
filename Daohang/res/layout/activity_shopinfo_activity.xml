@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/activity_shopinfo_tv_market_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/activity_market"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="    女装满百减50"
+        android:textColor="@color/tv_select_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/activity_shopinfo_tv_shop_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/activity_shops"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="    VIP满百减10"
+        android:textColor="@color/tv_select_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+</LinearLayout>

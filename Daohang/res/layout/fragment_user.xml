@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF1F3"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/fragment_userlr_login_topbar"
+        layout="@layout/top_bar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_user_info"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fragment_user_tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="编辑"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#616161" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.dongfang.views.CircleImageView
+                android:id="@+id/fragment_user_civ_icon"
+                android:layout_width="85px"
+                android:layout_height="85px"
+                android:src="@drawable/icon_temp" />
+
+            <TextView
+                android:id="@+id/fragment_user_tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="jaffice"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#616161" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/fragment_user_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/btn_goto"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="我的会员卡"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#616161"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fragment_user_rl_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/btn_goto"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="我的记录点"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#616161" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/fragment_user_rl_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/btn_goto"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="我的关注"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#616161" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar" />
+
+    <Button
+        android:id="@+id/fragment_userinfo_modify_btn_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="确认递交" />
+
+    <TextView
+        android:id="@+id/shops_adapter_item_tv_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_userinfo_modify_btn_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="请留下您的联系方式。\n如果意见采纳，我们将提供丰厚的奖金。"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shops_adapter_item_tv_floor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/fragment_setting_tv_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="您的联系方式"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_setting_tv_invite"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/include1"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

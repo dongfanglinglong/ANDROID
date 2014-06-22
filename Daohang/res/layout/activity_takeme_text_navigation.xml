@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_takeme_rl_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/activity_takeme_text_navigation_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/activity_takeme_text_navigation_btn_goto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_1"
+            android:gravity="center"
+            android:text="导航"
+            android:textColor="@color/tv_select_text_color" />
+
+        <Button
+            android:id="@+id/activity_takeme_text_navigation_btn_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_bg_2"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/tv_select_text_color" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_takeme_text_navigation_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_above="@+id/activity_takeme_text_navigation_ll"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/icon_text_nav_list_bg" >
+    </ListView>
+
+</RelativeLayout>
